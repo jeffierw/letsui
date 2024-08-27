@@ -25,14 +25,22 @@ const sidebars: SidebarsConfig = {
         'arch/architecture',
         'arch/encode',
         'arch/operation',
-        'arch/concepts'
+        'arch/concepts',
       ],
     },
     {
       type: 'category',
-      label: '开发者指南',
+      label: '安装与使用',
       items: [
         'install_and_use/install',
+        'install_and_use/use',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Walrus部署网站',
+      items: [
+        'walrus_sites/publish',
       ],
     },
   ],
