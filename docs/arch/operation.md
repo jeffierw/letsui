@@ -10,7 +10,9 @@ sidebar_position: 3
 
 Walrus会在 Sui 链上存储 Blob的元数据，Blob 的内容始终存储在链外的 Walrus 存储节点或缓存上。存储节点或缓存不必与任何 Sui 基础设施组件（例如验证器）重叠，并且存储 epoch 可以具有不同的长度，并且可以不具有与 Sui 纪元相同的开始/结束时间。
 
-简单理解就是会在链上存储简单的元数据来做数据与blob id之间的映射。
+简单理解就是会在链上存储简单的元数据来做数据与blob id之间的映射，下面是 Walrus 在 Sui 链上目前的[系统对象](https://suiscan.xyz/testnet/object/0x6c957cf363ec968582f24e3e1a638c968cec1fa228999c560ec7925994906315)：
+
+![system object](img/system.png)
 
 ### Sui 链上的存储生命周期
 

@@ -24,7 +24,8 @@ const sidebars: SidebarsConfig = {
       items: [
         'arch/architecture',
         'arch/encode',
-        'arch/operation'
+        'arch/operation',
+        'arch/concepts'
       ],
     },
     {
