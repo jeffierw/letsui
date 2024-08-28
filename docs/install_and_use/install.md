@@ -25,6 +25,15 @@ sui client faucet
 - [Mac Intel下载](https://storage.googleapis.com/mysten-walrus-binaries/walrus-latest-macos-x86_64)
 - [Ubuntu Intel下载](https://storage.googleapis.com/mysten-walrus-binaries/walrus-latest-ubuntu-x86_64)
 
+下载完成记得在下载目录`chmod +x walrus`设置权限。
+
+通过curl下载：
+```shell
+SYSTEM=ubuntu-x86_64 # or macos-x86_64 or macos-arm64
+curl https://storage.googleapis.com/mysten-walrus-binaries/walrus-latest-$SYSTEM -o walrus
+chmod +x walrus
+```
+
 手动配置CLI快捷使用：
 ```shell
 // 把下载的二进制文件放到一个位置，建议.local/bin/下面

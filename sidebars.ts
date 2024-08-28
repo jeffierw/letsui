@@ -41,6 +41,7 @@ const sidebars: SidebarsConfig = {
       label: 'Walrus部署网站',
       items: [
         'walrus_sites/publish',
+        'walrus_sites/ana'
       ],
     },
   ],
