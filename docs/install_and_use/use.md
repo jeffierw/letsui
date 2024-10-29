@@ -123,13 +123,56 @@ walrus publisher -b "127.0.0.1:31416" # run a publisher to store blobs
 
 对于某些用例（例如，公共网站），或者只是尝试 HTTP API，需要可公开访问的聚合器和/或发布者。Walrus提供了公开访问的API：
 
-- Aggregator: https://aggregator-devnet.walrus.space
-- Publisher: https://publisher-devnet.walrus.space
+- Aggregator: 
+    - https://aggregator.walrus-testnet.walrus.space
+    - https://wal-aggregator-testnet.staketab.org
+    - https://walrus-testnet-aggregator.bartestnet.com
+    - https://walrus-testnet.blockscope.net
+    - https://walrus-testnet-aggregator.nodes.guru
+    - https://walrus-cache-testnet.overclock.run
+    - https://sui-walrus-testnet.bwarelabs.com/aggregator
+    - https://walrus-testnet-aggregator.stakin-nodes.com
+    - https://testnet-aggregator-walrus.kiliglab.io
+    - https://walrus-cache-testnet.latitude-sui.com
+    - https://walrus-testnet-aggregator.nodeinfra.com
+    - https://walrus-tn.juicystake.io:9443
+    - https://walrus-agg-testnet.chainode.tech:9002
+    - https://walrus-testnet-aggregator.starduststaking.com:11444
+    - http://walrus-testnet-aggregator.everstake.one:9000
+    - http://walrus.testnet.pops.one:9000
+    - http://scarlet-brussels-376c2.walrus.bdnodes.net:9000
+    - http://aggregator.testnet.sui.rpcpool.com:9000
+    - http://walrus.krates.ai:9000
+    - http://walrus-testnet.stakingdefenseleague.com:9000
+    - http://walrus.sui.thepassivetrust.com:9000
+- Publisher:
+    - https://publisher.walrus-testnet.walrus.space
+    - https://wal-publisher-testnet.staketab.org
+    - https://walrus-testnet-publisher.bartestnet.com
+    - https://walrus-testnet-publisher.nodes.guru
+    - https://sui-walrus-testnet.bwarelabs.com/publisher
+    - https://walrus-testnet-publisher.stakin-nodes.com
+    - https://testnet-publisher-walrus.kiliglab.io
+    - https://walrus-testnet-publisher.nodeinfra.com
+    - https://walrus-testnet.blockscope.net:11444
+    - https://walrus-publish-testnet.chainode.tech:9003
+    - https://walrus-testnet-publisher.starduststaking.com:11445
+    - http://walrus-publisher-testnet.overclock.run:9001
+    - http://walrus-testnet-publisher.everstake.one:9001
+    - http://walrus.testnet.pops.one:9001
+    - http://ivory-dakar-e5812.walrus.bdnodes.net:9001
+    - http://publisher.testnet.sui.rpcpool.com:9001
+    - http://walrus.krates.ai:9001
+    - http://walrus-publisher-testnet.latitude-sui.com:9001
+    - http://walrus-tn.juicystake.io:9090
+    - http://walrus-testnet.stakingdefenseleague.com:9001
+    - http://walrus.sui.thepassivetrust.com:9001
+    - https://publisher-devnet.walrus.space
 
 在本地尝试上传：
 ```shell
-AGGREGATOR=https://aggregator-devnet.walrus.space
-PUBLISHER=https://publisher-devnet.walrus.space
+AGGREGATOR=https://aggregator.walrus-testnet.walrus.space
+PUBLISHER=https://publisher.walrus-testnet.walrus.space
 
 curl -X PUT "$PUBLISHER/v1/store" -d "hello walrus" # store the string `some string` for 1 storage epoch
 {

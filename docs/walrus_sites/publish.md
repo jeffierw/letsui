@@ -31,8 +31,13 @@ cargo build --release
 ## 部署
 
 部署比较简单，但上传比较大的文件速度还是比较慢的，需要确保本地的钱包地址的gas是否足够，这里尝试把本文档传到 Walrus:
+
+> Tips: 目前在 Walrus 测试网上，一个纪元的持续时间为 1 天。如果您希望您的网站保持更长时间，请使用--epochs标志指定纪元数！
+
+> Tips: 上传的文件夹如果是前端脚手架（例如Vue/React等）生成的，需要先打包构建生成类似build/dist/out等名称的打包文件，并上传它，不要把工程文件上传了！
+
 ```shell
-yepw@yepwdeMacBook-Pro walrus-sites % ./target/release/site-builder --config site-builder/assets/builder-example.yaml publish ../../web3/move-project/letswalrus/build 
+yepw@yepwdeMacBook-Pro walrus-sites % ./target/release/site-builder publish ../../web3/move-project/letswalrus/build --epochs 100
 Parsing the directory ../../web3/move-project/letswalrus/build and locally computing blob IDs ... [Ok]
 Storing resource on Walrus: /.nojekyll ... [Ok]
 Storing resource on Walrus: /404.html ... [Ok]
